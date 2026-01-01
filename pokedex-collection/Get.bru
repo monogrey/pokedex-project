@@ -1,0 +1,19 @@
+meta {
+  name: Get
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/pokemon/151
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "ID": 11,
+    "Name": "Metapod",
+    "Desc": "Metapod is a Bug-type Pokemon introduced in Generation I."
+  }
+}

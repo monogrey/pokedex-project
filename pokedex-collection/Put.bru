@@ -1,0 +1,19 @@
+meta {
+  name: Put
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8080/pokemon/151
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "ID": 151,
+    "Name": "Mew",
+    "Desc": "Mew is a Psychic-type Mythical Pokemon introduced in Generation I."
+  }
+}
